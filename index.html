@@ -17,41 +17,30 @@
     header {
       padding: 30px 0;
       background-color: red;
-      color: white;
     }
 
     header h1 {
       font-size: 2em;
       letter-spacing: 2px;
-      margin: 0;
+      color: white;
     }
 
     main {
       padding: 20px;
     }
 
-    .download-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: black;
+    .download {
+      margin: 20px;
+    }
+
+    .download a {
+      background: black;
       color: white;
+      padding: 10px 20px;
       text-decoration: none;
-      margin-bottom: 20px;
-      border-radius: 4px;
-    }
-
-    .main-media {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-bottom: 40px;
-    }
-
-    .main-media img, .main-media video {
-      max-width: 300px;
-      border: 1px solid #ccc;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      border-radius: 5px;
+      font-family: "Courier New", monospace;
     }
 
     .gallery {
@@ -59,16 +48,14 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       justify-items: center;
+      margin-top: 20px;
     }
 
-    .gallery img {
-      max-width: 200px;
+    .gallery img, .gallery video {
+      height: 200px; /* Example height, adjust as needed */
+      object-fit: contain;
       border: 1px solid #ccc;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .modifier {
-      margin-top: 40px;
     }
 
     p {
@@ -83,31 +70,27 @@
   </header>
 
   <main>
-    <a class="download-btn" href="assets/MyGunModel.blend" download>Download .blend File</a>
-
-    <div class="main-media">
-      <img src="assets/preview_image.png" alt="Preview Image">
-      <video src="assets/turnaround_video.mp4" controls></video>
-      <video src="assets/turnaround_video_freestyle.mp4" controls></video>
+    <div class="download">
+      <a href="assets/MyGunModel.blend" download>Download .blend File</a>
     </div>
 
     <div class="gallery">
-      <div>
-        <img src="assets/up_edge.png" alt="Up Edge">
-        <img src="assets/up.png" alt="Up">
-      </div>
-      <div>
-        <img src="assets/front_edge.png" alt="Front Edge">
-        <img src="assets/front.png" alt="Front">
-        <img src="assets/cylinder.png" alt="Cylinder">
-      </div>
-      <div>
-        <img src="assets/side_edge.png" alt="Side Edge">
-        <img src="assets/side.png" alt="Side">
-      </div>
-    </div>
+      <!-- 1st Row -->
+      <img src="assets/cylinder.png" alt="Cylinder">
+      <video src="assets/turnaround_video.mp4" controls></video>
+      <video src="assets/turnaround_video_freestyle.mp4" controls></video>
 
-    <div class="modifier">
+      <!-- 2nd Row -->
+      <img src="assets/up_edge.png" alt="Up Edge">
+      <img src="assets/front_edge.png" alt="Front Edge">
+      <img src="assets/side_edge.png" alt="Side Edge">
+
+      <!-- 3rd Row -->
+      <img src="assets/up.png" alt="Up">
+      <img src="assets/front.png" alt="Front">
+      <img src="assets/side.png" alt="Side">
+
+      <!-- 4th Row -->
       <img src="assets/modifier.png" alt="Modifier">
     </div>
 
