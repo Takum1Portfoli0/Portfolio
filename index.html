@@ -15,49 +15,37 @@
     }
 
     header {
+      background-color: red;
       padding: 30px 0;
-      background: red;
-      color: white;
     }
 
     header h1 {
       font-size: 2em;
       letter-spacing: 2px;
-      margin: 0;
-    }
-
-    main {
-      padding: 20px;
+      color: white;
     }
 
     .download-button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 20px 0;
-      background: black;
+      background-color: black;
       color: white;
+      padding: 10px 20px;
       text-decoration: none;
-      font-size: 1em;
+      display: inline-block;
+      margin: 20px 0;
       border-radius: 5px;
     }
 
-    .gallery {
+    .main-content {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       justify-items: center;
+      align-items: center;
       padding: 20px;
     }
 
-    .gallery img {
-      max-width: 90%;
-      border: 1px solid #ccc;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    video {
+    .main-content img, .main-content video {
       max-width: 80%;
-      margin: 20px 0;
       border: 1px solid #ccc;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     }
@@ -65,6 +53,7 @@
     p {
       font-size: 1.2em;
       margin-top: 30px;
+      grid-column: span 3;
     }
   </style>
 </head>
@@ -74,21 +63,23 @@
   </header>
 
   <main>
-    <a href="MyGunModel.blend" class="download-button" download>Download .blend File</a>
+    <a href="assets/MyGunModel.blend" download class="download-button">Download .blend File</a>
 
-    <img src="preview_image.png" alt="Preview Image">
+    <div class="main-content">
+      <img src="assets/preview_image.png" alt="Preview Image">
+      <video src="assets/turnaround_video.mp4" controls></video>
+      <video src="assets/turnaround_video_freestyle.mp4" controls></video>
 
-    <video src="turnaround_video.mp4" controls></video>
+      <img src="assets/up_edge.png" alt="Up Edge">
+      <img src="assets/front_edge.png" alt="Front Edge">
+      <img src="assets/side_edge.png" alt="Side Edge">
 
-    <div class="gallery">
-      <img src="up_edge.png" alt="Up Edge">
-      <img src="front_edge.png" alt="Front Edge">
-      <img src="side_edge.png" alt="Side Edge">
-      <img src="modifier.png" alt="Modifier">
-      <img src="side.png" alt="Side">
-      <img src="front.png" alt="Front">
-      <img src="up.png" alt="Up">
-      <img src="cylinder.png" alt="Cylinder">
+      <img src="assets/modifier.png" alt="Modifier">
+      <img src="assets/side.png" alt="Side">
+      <img src="assets/front.png" alt="Front">
+
+      <img src="assets/up.png" alt="Up">
+      <img src="assets/cylinder.png" alt="Cylinder">
     </div>
 
     <p>Thank you for viewing my work!</p>
