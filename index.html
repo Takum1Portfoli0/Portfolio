@@ -16,31 +16,27 @@
 
     header {
       padding: 30px 0;
-      background-color: red;
+      background: red;
+      color: white;
     }
 
     header h1 {
       font-size: 2em;
       letter-spacing: 2px;
-      color: white;
     }
 
     main {
       padding: 20px;
     }
 
-    .download {
-      margin: 20px;
-    }
-
-    .download a {
+    .download-button {
       background: black;
       color: white;
       padding: 10px 20px;
       text-decoration: none;
-      display: inline-block;
-      border-radius: 5px;
       font-family: "Courier New", monospace;
+      display: inline-block;
+      margin: 20px 0;
     }
 
     .gallery {
@@ -52,7 +48,7 @@
     }
 
     .gallery img, .gallery video {
-      height: 200px; /* Example height, adjust as needed */
+      height: 300px;
       object-fit: contain;
       border: 1px solid #ccc;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -70,28 +66,48 @@
   </header>
 
   <main>
-    <div class="download">
-      <a href="assets/MyGunModel.blend" download>Download .blend File</a>
-    </div>
+    <a class="download-button" href="assets/MyGunModel.blend" download>Download .blend File</a>
 
     <div class="gallery">
-      <!-- 1st Row -->
-      <img src="assets/cylinder.png" alt="Cylinder">
-      <video src="assets/turnaround_video.mp4" controls></video>
-      <video src="assets/turnaround_video_freestyle.mp4" controls></video>
+      <a href="assets/cylinder.png" target="_blank">
+        <img src="assets/cylinder.png" alt="Cylinder">
+      </a>
 
-      <!-- 2nd Row -->
-      <img src="assets/up_edge.png" alt="Up Edge">
-      <img src="assets/front_edge.png" alt="Front Edge">
-      <img src="assets/side_edge.png" alt="Side Edge">
+      <a href="assets/turnaround_video.mp4" target="_blank">
+        <video src="assets/turnaround_video.mp4" controls></video>
+      </a>
 
-      <!-- 3rd Row -->
-      <img src="assets/up.png" alt="Up">
-      <img src="assets/front.png" alt="Front">
-      <img src="assets/side.png" alt="Side">
+      <a href="assets/turnaround_video_freestyle.mp4" target="_blank">
+        <video src="assets/turnaround_video_freestyle.mp4" controls></video>
+      </a>
 
-      <!-- 4th Row -->
-      <img src="assets/modifier.png" alt="Modifier">
+      <a href="assets/up_edge.png" target="_blank">
+        <img src="assets/up_edge.png" alt="Up Edge">
+      </a>
+
+      <a href="assets/front_edge.png" target="_blank">
+        <img src="assets/front_edge.png" alt="Front Edge">
+      </a>
+
+      <a href="assets/side_edge.png" target="_blank">
+        <img src="assets/side_edge.png" alt="Side Edge">
+      </a>
+
+      <a href="assets/up.png" target="_blank">
+        <img src="assets/up.png" alt="Up">
+      </a>
+
+      <a href="assets/front.png" target="_blank">
+        <img src="assets/front.png" alt="Front">
+      </a>
+
+      <a href="assets/side.png" target="_blank">
+        <img src="assets/side.png" alt="Side">
+      </a>
+
+      <a href="assets/modifier.png" target="_blank">
+        <img src="assets/modifier.png" alt="Modifier">
+      </a>
     </div>
 
     <p>Thank you for viewing my work!</p>
