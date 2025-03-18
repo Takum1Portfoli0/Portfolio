@@ -15,45 +15,65 @@
     }
 
     header {
-      background-color: red;
       padding: 30px 0;
+      background-color: red;
+      color: white;
     }
 
     header h1 {
       font-size: 2em;
       letter-spacing: 2px;
-      color: white;
+      margin: 0;
     }
 
-    .download-button {
+    main {
+      padding: 20px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 10px 20px;
       background-color: black;
       color: white;
-      padding: 10px 20px;
       text-decoration: none;
-      display: inline-block;
-      margin: 20px 0;
-      border-radius: 5px;
+      margin-bottom: 20px;
+      border-radius: 4px;
     }
 
-    .main-content {
+    .main-media {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .main-media img, .main-media video {
+      max-width: 300px;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       justify-items: center;
-      align-items: center;
-      padding: 20px;
     }
 
-    .main-content img, .main-content video {
-      max-width: 80%;
+    .gallery img {
+      max-width: 200px;
       border: 1px solid #ccc;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .modifier {
+      margin-top: 40px;
     }
 
     p {
       font-size: 1.2em;
       margin-top: 30px;
-      grid-column: span 3;
     }
   </style>
 </head>
@@ -63,23 +83,32 @@
   </header>
 
   <main>
-    <a href="assets/MyGunModel.blend" download class="download-button">Download .blend File</a>
+    <a class="download-btn" href="assets/MyGunModel.blend" download>Download .blend File</a>
 
-    <div class="main-content">
+    <div class="main-media">
       <img src="assets/preview_image.png" alt="Preview Image">
       <video src="assets/turnaround_video.mp4" controls></video>
       <video src="assets/turnaround_video_freestyle.mp4" controls></video>
+    </div>
 
-      <img src="assets/up_edge.png" alt="Up Edge">
-      <img src="assets/front_edge.png" alt="Front Edge">
-      <img src="assets/side_edge.png" alt="Side Edge">
+    <div class="gallery">
+      <div>
+        <img src="assets/up_edge.png" alt="Up Edge">
+        <img src="assets/up.png" alt="Up">
+      </div>
+      <div>
+        <img src="assets/front_edge.png" alt="Front Edge">
+        <img src="assets/front.png" alt="Front">
+        <img src="assets/cylinder.png" alt="Cylinder">
+      </div>
+      <div>
+        <img src="assets/side_edge.png" alt="Side Edge">
+        <img src="assets/side.png" alt="Side">
+      </div>
+    </div>
 
+    <div class="modifier">
       <img src="assets/modifier.png" alt="Modifier">
-      <img src="assets/side.png" alt="Side">
-      <img src="assets/front.png" alt="Front">
-
-      <img src="assets/up.png" alt="Up">
-      <img src="assets/cylinder.png" alt="Cylinder">
     </div>
 
     <p>Thank you for viewing my work!</p>
