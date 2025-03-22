@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    body {
+      background: white;
+      color: black;
+      font-family: "Courier New", monospace;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 30px 0;
+      background: red;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .download-button {
+      background: black;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-family: "Courier New", monospace;
+      display: inline-block;
+      margin: 20px 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      justify-items: center;
+      margin-top: 20px;
+    }
+
+    .gallery img, .gallery video {
+      height: 300px;
+      object-fit: contain;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PORTFOLIO</h1>
+  </header>
+
+  <main>
+    <a class="download-button" href="assets/MyGunModel.blend" download>Download .blend File</a>
+
+    <div class="gallery">
+      <a href="assets/cylinder.png" target="_blank">
+        <img src="assets/cylinder.png" alt="Cylinder">
+      </a>
+
+      <a href="assets/turnaround_video.mp4" target="_blank">
+        <video src="assets/turnaround_video.mp4" controls></video>
+      </a>
+
+      <a href="assets/turnaround_video_freestyle.mp4" target="_blank">
+        <video src="assets/turnaround_video_freestyle.mp4" controls></video>
+      </a>
+
+      <a href="assets/up_edge.png" target="_blank">
+        <img src="assets/up_edge.png" alt="Up Edge">
+      </a>
+
+      <a href="assets/front_edge.png" target="_blank">
+        <img src="assets/front_edge.png" alt="Front Edge">
+      </a>
+
+      <a href="assets/side_edge.png" target="_blank">
+        <img src="assets/side_edge.png" alt="Side Edge">
+      </a>
+
+      <a href="assets/up.png" target="_blank">
+        <img src="assets/up.png" alt="Up">
+      </a>
+
+      <a href="assets/front.png" target="_blank">
+        <img src="assets/front.png" alt="Front">
+      </a>
+
+      <a href="assets/side.png" target="_blank">
+        <img src="assets/side.png" alt="Side">
+      </a>
+
+      <a href="assets/modifier.png" target="_blank">
+        <img src="assets/modifier.png" alt="Modifier">
+      </a>
+    </div>
+
+    <p>Thank you for viewing my work!</p>
+  </main>
+</body>
+</html>
